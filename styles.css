@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    /*Removes default margin and padding applied by other browsers */
+    padding: 0;
+}
+
+header {
+    display: flex;
+    /*Tells header it is a flex container*/
+    justify-content: space-evenly;
+    /*Evenly spaces child elements inside the container*/
+    align-items: center;
+    /*Vertically center the child elements inside the container*/
+    background-color: rgb(181, 190, 198);
+    /*background color*/
+    /*background-image: url(assets/Millcreek.jpeg);*/
+    /*layered photo behind main photos, instead of a colored background*/
+    background-size: 1550px;
+    /*size of background image*/
+    background-position: center;
+    /*layout of background photo on the screen*/
+    background-repeat: no-repeat; 
+    /*fits background image to screen, without duplicating, or cutting off the full image*/
+    color: black;
+    /*font color*/
+    padding: 10px;
+    /*padding INSIDE the header to create space around the content */
+    width: 100%;
+    /* makes sure the header spans the entire width of the screen */
+    margin: 0 auto;
+    /* centers header horizontally on the page */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    /* adds a slight shadow below the header to give it depth */
+    flex-wrap: wrap;
+    /* makes sure that the child elements wrap onto a new line if there isn't enough space */
+}
+
+header img {
+    border-radius: 5%;
+    /* round the corners of the image or the element (if it's square), adds rounded corners */
+    box-shadow: 3px 3px 10px rgba (0, 0, 0, 0.5);
+    /* adds a soft shadow to make it "float" */
+    max-width: 100%;
+    /* ensures the image is responsive */
+    height: auto;
+    /* maintains image's aspect ration while re-sizing */
+    object-fit: cover;
+    /* crops the image without distorting */
+}
+
+#greeting {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+.intro {
+    max-width: 500px;
+    /* limits the width for better readability */
+    text-align: center;
+    /* aligns text to the left, right, center */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(222, 220, 220);
+    font-size: 23px;
+}
+/* Styling for entire Main Elemennts */
+main {
+    display: flex;
+    /* tells main it is a flex container */
+    flex-direction: column;
+    /* stacks child elements (sections) vertically, in a column */
+    align-items: center;
+    /* align child elements horizontally in the center */
+    padding: 30px;
+    /* adds padding AROUND the main content for better spacing */
+    background-color: rgb(43, 42, 42);
+    /* changes the color of the background underneath the header */
+}
+
+/* Styling for the section elements */
+
+section {
+    background-color: #f9f9f9;
+    /* background color of each section */
+    border-radius: 20px; 
+    /* adds rounded corners to section */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    /* box-shadow making it "float" */
+    padding: 30px 100px;
+    /* adds space INSIDE each section "card" */
+    margin-bottom: 20px;
+    /* adds space at the BOTTOM of each "card" */
+    width: 1000px;
+    /* makes the section take up the full width of the MAIN container */
+    /* max-width: 1000px; */
+    /* limits the width to a MA of 800px */
+}
+
+li {
+    margin-bottom: 15px;
+    /* Add space to EACH list item */
+}
+
+h1 {
+    font-style: normal;   
+    font-size: 32px;
+    color: rgb(9, 9, 9);
+}
+
+h2 {
+    border: solid rgb(115, 115, 160) 2px;
+    width: fit-content;
+}
+
+h3 {
+    font: italic;
+    font-style:normal;
+    font-size:19px;
+}
+
+h4 {
+    font: italic;
+    font-style:italic;
+    font-size:18px;
+}
+p {
+    font-size: 20px; 
+    color:rgb(5, 5, 24);
+    text-align: left;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* this will change the link when the cursor hovers over it */
+a:hover {
+    text-decoration: underline; 
+    color: #c467af;
+}
+footer {
+    color: white;
+    background-color: #b388aa;
+    height: 60px;
+    font-size: 20px;
+}
+
+.centerFooter {
+    text-align: center;
+}
+
+/* command backslash */
